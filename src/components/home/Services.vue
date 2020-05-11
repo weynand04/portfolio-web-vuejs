@@ -17,7 +17,7 @@
           class="d-flex justify-space-around"
         >
           <v-card max-width="274px" dark>
-            <v-img :src="require('@/assets/services/html_tag.png')" contain height="150px"></v-img>
+            <v-img :src="item.img" contain height="150px"></v-img>
             <v-card-title class="justify-center">{{item.title}}</v-card-title>
             <v-card-text class="justify-center">{{item.desc}}</v-card-text>
           </v-card>
@@ -33,17 +33,20 @@ export default {
   data: () => ({
     services: [
       {
+        img: require("@/assets/services/frontend.png"),
         title: "Front-End Developer",
         desc:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       {
+        img: require("@/assets/services/backend.png"),
         title: "Back-End Developer",
         desc:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       },
       {
-        title: "Full stack Developer",
+        img: require("@/assets/services/uiuxdesaign.png"),
+        title: "UI/UX Designer",
         desc:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       }
